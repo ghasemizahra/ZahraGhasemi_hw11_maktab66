@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./1.css">
+    <link rel="stylesheet" href="./icomoon (4)/style.css">
+    <link rel="stylesheet" href="./icomoon close/style.css">
+</head>
+<body class="theme-dark">
+    <div class="position">
+    <header >
+        <div class="title">
+            <h2>TODO</h2>
+            <button id="themeSwitcher" onclick="changeTheme()">
+                <span class="icon-sun"></span>
+            </button>
+    </header>
+    <main>
+        <div class="add-new-item flex-flow">
+            <span></span>
+            <button id="mybtn" onclick="addInput()"></button>
+            <input type="text" id="addInput" placeholder=" Creat a new todo..." class="todoInput">
+        </div>
+        <ul id="myUl">
+            <li class="liItem">
+                <label class="list-item">
+                    <input type="checkbox" name="todoItem" class="checkbox">
+                    <span class="checkmark"></span>
+                    <span class="text">First task</span>
+                </label>
+                <span class="icon-cross"></span>
+            </li>
+            <li class="liItem checked">
+                <label class="list-item">
+                    <input type="checkbox" name="todoItem" class="checkbox">
+                    <span class="checkmark"></span>
+                    <span class="text">Second task</span>
+                </label>
+                <span class="icon-cross"></span>
+            </li>
+            <li class="liItem">
+                <label class="list-item">
+                    <input type="checkbox" name="todoItem" class="checkbox">
+                    <span class="checkmark"></span>
+                    <span class="text">Thirth task</span>
+                </label>
+                <span class="icon-cross"></span>
+            </li>
+        </ul>
+        <div class="clear-item">
+            <div class="left-item"><span>5 items left</span></div>
+            <span><div class="filter">
+                <label class="filter-item">
+                    <input type="radio" name="filter" id="all"><span>All</span>
+                </label>
+                <label class="filter-item">
+                    <input type="radio" name="filter" id="active"><span>Active</span>
+                </label>
+                <label class="filter-item">
+                    <input type="radio" name="filter" id="completed"><span>Completed</span>
+                </label>
+            </div></span>
+            <div class="right-item"><span>Clear Completed</span></div>
+        </div>
+       
+        
+    </main>
+    <script src="./1.js"></script>
+</body>
+</html>
